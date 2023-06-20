@@ -1,86 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Buse Ece</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="icon" href="favicon.ico">
-        <link rel="preconnect" href="https://fonts.google.com/">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="main-container">
-            <div class="header">
-                <div><a href="#home-container">Home</a> </div>
-                <div><a href="#about-me-container">About Me</a> </div>
-                <div><a href="#projects-container">Projects</a></div>
-                <div class="contact"><a href="#contact-me-container">Contact Me</a></div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
 
-            <div class="home-container" id="home-container">
-                <div>
-                    <img class="BuseImg" src="images/buse.png" alt="Buse Ece">
-                </div>
-                <div>
-                    <h2 class="introduction">Hi there, this is</h2>
-                    <h1 class="name">BUSE ECE</h1>
-                    <h2 class="introduction">a student.</h2>
-                </div>
-            </div>    
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
 
-            <div class="about-me-container" id="about-me-container">
-                <h1 class="about-me">About Me</h1>
-                <p class="about-me-p">I am a person who is passionate about the sea, trying to play the <span>flute</span>
-                    and creating some cute stuff with <span>punch needling</span>. 
-                </p>
-                <p class="about-me-p">Apart from these hobbies, I am a student and self-thaught <span>web developer</span>.
-                    I have been diligently honing my skills in website design, focusing 
-                    specifically on crafting exceptional user interfaces (UI) and optimizing 
-                    user experiences (UX).
-                </p>
-            </div>   
-            
-            <div class="projects-container" id="projects-container">
-                <h1 class="projects-title">Projects</h1>
-                <div class="projects">
-                    <div class="flag-project">
-                       <a href="../7.3+Flag+Project/7.3 CSS Flag Project/index.html"><img src="images/flag.png" alt="flag-project" class="flag"></a>
-                       <p>Creating a country's flag with using CSS.</p>
-                    </div>
-                    <div class="mondrian-project">
-                        <a href="../10.3+Mondrian+Project/10.3 Mondrian Project/index.html"><img src="images/mondrian.png" alt="mondrian" class="mondrian"></a>
-                        <p>Creating a Mondrian's masterpiece with using CSS Grid.</p>
-                    </div>
-                 </div>
-            </div>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
 
-            <div class="contact-me-container" id="contact-me-container">
-                <h1 class="lets-contact">Let's Contact!</h1>
-                <div class="contact-p">
-                    <img class="buse-img-contact" src="images/buse.png" alt="">
-                    <div>
-                        <p class="contact-me-p">Feel free to click the links and embark on an engaging chat session with me.</p>
-                    </div>
-                    <div class="contact-links">
-                        <a href="mailto:busecee0@gmail.com"><img class="gmail contact-l" src="images/gmail.png" alt="gmail"></a>
-                        <a href="https://www.linkedin.com/in/buse-ece-437a23260/"><img class="linkedin contact-l" src="images/linkedin.png" alt="linkedin"></a>
-                        <a href="https://github.com/buseecee"><img class="github contact-l" src="images/github.png" alt="github"></a>
-                    </div>
-                </div>
-            </div>
-             
+    .container{  
+      display: grid;
+      height: 100vh;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      
+    }
 
-            <footer>
-                Copyright @Buse Ece. All rights reserved.
-             </footer>
+    .red{
+      background-color: #E72F24;
+    }
 
-        </div>
+    .blue{
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-row-start: 2;
+      border-bottom: 10px solid black;
+    }
 
-        
-    </body>
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+    .beige-1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .beige-2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .beige-3{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .beige-4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .beige-5{
+      background-color: #F0F1EC;
+    }
 
     
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="beige-1"></div>
+    <div class="beige-2"></div>
+    <div class="beige-3"></div>
+    <div class="beige-4"></div>
+    <div class="beige-5"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+  </div>
+</body>
 
 </html>
